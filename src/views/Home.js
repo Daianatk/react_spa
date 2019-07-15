@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
  
-class Home extends Component {
-  render() {
+export default function() {
     return (
       <div>
         <h2>Ingresa el nombre del Cliente</h2>
@@ -10,7 +9,4 @@ class Home extends Component {
         <p>Tu sistema BurgerQueen a tu servicio</p>
       </div>
     );
-  }
 }
- 
-export default Home;

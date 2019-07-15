@@ -4,12 +4,11 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Home from "./Home";
-import Waiter from "./Waiter";
-import Chef from "./Chef";
+import Home from "./views/Home";
+import Waiter from "./views/Waiter";
+import Chef from "./views/Chef";
 //Aqui importamos nuestra imagen
-import logo from './logo.png';
-import fondo from './fondo.jpg';
+import logo from './img/logo.png';
  
 class Main extends Component {
   render() {
@@ -27,7 +26,6 @@ class Main extends Component {
             <Route path="/waiter" component={Waiter}/>
             <Route path="/chef" component={Chef}/>
           </div>
-          <img className="fondo" alt="fondo_burgerQueen" src={fondo}/>
         </div>
       </HashRouter>
     );

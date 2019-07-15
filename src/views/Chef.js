@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
  
-class Chef extends Component {
-  render() {
+export default function() {
     return (
       <div>
         <h2>Ordenes del Dìa</h2>
@@ -9,7 +8,4 @@ class Chef extends Component {
         </p>
       </div>
     );
-  }
 }
- 
-export default Chef;

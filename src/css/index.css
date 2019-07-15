@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(211, 209, 201, 0.671);
     padding: 20px;
     margin: 0;
+    font-family: 'Alegreya', serif;
   }
   h1, h2, p, ul, li {
-    font-family: sans-serif;
+    font-family: 'Alegreya', serif;
   }
   ul.header li {
     display: inline;
@@ -12,7 +14,6 @@ body {
     margin: 0;
   }
   ul.header {
-    background-color: rgb(29, 18, 18);
     padding: 0;
     margin: 0;
   }
@@ -25,7 +26,7 @@ body {
     margin:auto;
   }
   ul.header li a {
-    color: rgb(250, 242, 242);
+    color: rgb(119, 91, 91);
     font-weight: bold;
     text-decoration: none;
     padding: 20px;
@@ -43,5 +44,5 @@ body {
     margin-bottom: 30px;
   }
   .active {
-    background-color: rgb(197, 12, 12);
+    background-color: rgb(253, 251, 251);
   }
