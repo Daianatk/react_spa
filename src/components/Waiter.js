@@ -22,7 +22,7 @@ useEffect(()=>{
 
 function onChange(e) {
     let string = e.target.value
-    let regex = new RegExp(string, 'i')
+    let regex = new RegExp(string, 'desayuno')
     //si es true se guarda en el filtro sino lo elimina
     //se utiliza virtualDom full javascript
     let filtered = list.filter(m => regex.test(m.tags))
@@ -32,16 +32,26 @@ function onChange(e) {
     return (
         <div>
         <section className="viewsTotal">
-        <label onChange={onChange} id="lista"/>
+        <button className="button" onChange={onChange} id="desayuno">Desayuno</button>
+        <button className="button" id="options">Almuerzo</button>
+        <button className="button" id="options">Hamburguesas</button>
+        <button className="button" id="options">Acompañamientos</button>
+        <button className="button" id="options">Bebidas</button><p/>
         </section>
     <section id="results" className="results">
 
-        {results.map((food, index) =>{
+        {results.map((food) =>{
             return (
-            <tr>
-                <td>{food.item}</td>
-                <td>{food.price}</td>
-              </tr>
+            <div className="cards">
+                <div className="card">
+            <img className="card_img" src={food.img} alt="Foods"/> 
+            <div className="card_info">
+                <div className="card_title"><b>{food.item} </b></div> 
+                <div className="card_category">$ {food.price} </div> 
+                </div>
+            </div>
+            </div>
+
             )
         })}
 

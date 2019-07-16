@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+*{
+  box-sizing: border-box;
+}
 body {
     background-color: rgba(211, 209, 201, 0.671);
     padding: 20px;
     margin: 0;
     font-family: 'Alegreya', serif;
+    
   }
   h1, h2, p, ul, li {
     font-family: 'Alegreya', serif;
@@ -17,7 +23,7 @@ body {
     padding: 0;
     margin: 0;
   }
-  img {
+  .logo {
     display:block;
     margin:auto;
   }
@@ -46,3 +52,122 @@ body {
   .active {
     background-color: rgb(253, 251, 251);
   }
+
+/*Card*/
+.cards {
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  -webkit-justify-content: center;
+  max-width: 650px;
+}
+.card_img {
+  display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 195px;
+    border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.card_img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 195px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    top: 0;
+}
+.card {
+  display: inline-block;
+  margin-right: 5px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: rgb(244, 248, 246);
+  width: 33.3%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.10, 1.10);
+}
+.card_info {
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+     padding: 10px 14px 14px 14px;
+     text-align: center;
+  }
+  .card_category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+   color: #868686;
+}
+
+.card_title {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+.card:hover .card_img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+.card:hover .card_info {
+  background-color: transparent;
+  position: relative;
+}
+.card:hover .card_info-hover {
+  opacity: 1;
+}
+/*Botones*/
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0c911), color-stop(1, #f2ab1e));
+	background:-moz-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-webkit-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-o-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:-ms-linear-gradient(top, #f0c911 5%, #f2ab1e 100%);
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c911', endColorstr='#f2ab1e',GradientType=0);
+	background-color:#f0c911;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #e65f44;
+  display:inline-block;
+  text-align: center;
+	cursor:pointer;
+	color:#c92200;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 47px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ded17c;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911));
+	background:-moz-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-webkit-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-o-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:-ms-linear-gradient(top, #f2ab1e 5%, #f0c911 100%);
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911',GradientType=0);
+	background-color:#f2ab1e;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
