@@ -24,24 +24,21 @@ useEffect(()=>{
         <div>
         <section className="viewsTotal">
         <button className="button" id="desayuno">Desayuno</button>
-        <button className="button" id="options">Almuerzo</button>
-        <button className="button" id="options">Hamburguesas</button>
-        <button className="button" id="options">Acompañamientos</button>
-        <button className="button" id="options">Bebidas</button><p/>
+        <button className="button" id="almuerzo">Almuerzo y Cena</button><p/>
+        <input type="text" className="inputClient" placeholder="Escriba el nombre del Cliente"></input><p/>
         </section>
     <section id="results" className="results">
 
         {results.map((food) =>{
             return (
-            <div className="cards">
+            <div className="conteiner">
                 <div className="card">
-            <img className="card_img" src={food.img} alt="Foods"/> 
-            <div className="card_info">
-                <button className="button"><b>{food.item}</b> ${food.price}</button> 
+                    <img className="cardImg" src={food.img} alt="Foods"/> 
+                        <div className="cardContent">
+                        <button className="button"><b>{food.item}</b> ${food.price}</button> 
+                        </div>
+                </div>
             </div>
-            </div>
-            </div>
-
             )
         })}
 
