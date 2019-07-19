@@ -1,17 +1,12 @@
-import React, { Component } from "react";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
+import React from "react";
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./views/Home";
 import Waiter from "./views/Waiter";
 import Chef from "./views/Chef";
 //Aqui importamos nuestra imagen
 import logo from './img/logo.png';
  
-class Main extends Component {
-  render() {
+const Main=()=> {
     return (
       <HashRouter>
         <div>
@@ -29,7 +24,6 @@ class Main extends Component {
         </div>
       </HashRouter>
     );
-  }
 }
  
 export default Main;

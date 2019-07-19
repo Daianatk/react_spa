@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-    background-color: rgba(211, 205, 169, 0.959);
+    background-color: rgba(214, 247, 214, 0.959);
     padding: 20px;
     margin: 0;
     font-family: 'Alegreya', serif;
@@ -33,11 +33,12 @@ body {
     margin:auto;
   }
   ul.header li a {
-    color: rgb(119, 91, 91);
+    color: rgb(185, 34, 34);
     font-weight: bold;
     text-decoration: none;
     padding: 15px;
     display: inline-block;
+    font-size: 20px;
   }
   .content {
     background-color: #FFF;
