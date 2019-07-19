@@ -20,6 +20,7 @@ useEffect(()=>{
     return views
 }, [] )
 
+
     return (
         <div>
         <section className="viewsTotal">
