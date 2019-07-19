@@ -32,6 +32,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
+<<<<<<< HEAD
     "homepage": "http://daianatk.github.io/react_spa"
+=======
+      "homepage": "http://daianatk.github.io/react_spa"
+    }
+>>>>>>> 0f38dfb26af607acc1070a81e5db2fbff94b4017
   }
 }
