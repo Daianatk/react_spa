@@ -4,27 +4,23 @@ import { foodsRef } from '../services/functions'
 export default function() {
 
 //hooks
-let [results, setResults] = useState([])
-let [list, setList] = useState([])
+const [results, setResults] = useState([])
 
 useEffect(()=>{
-    let views = foodsRef.onSnapshot(function(snap){
-        let foods = []
+    const views = foodsRef.onSnapshot(function(snap){
+        const foods = []
         snap.forEach(doc=>{
             foods.push(doc.data())
         })
         setResults(foods)
-        setList(foods)
     })
-
-    return views
+    return views;
 }, [] )
-
 
     return (
         <div>
         <section className="viewsTotal">
-        <button className="button" id="desayuno">Desayuno</button>
+        <button className="button" id="desayuno">Desayuno</button><p/>
         <button className="button" id="almuerzo">Almuerzo y Cena</button><p/>
         <input type="text" className="inputClient" placeholder="Escriba el nombre del Cliente"></input><p/>
         </section>
